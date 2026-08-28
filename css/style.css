@@ -2032,4 +2032,102 @@ section {
 
 }
 
+/* =========================================
+   CONTACT PAGE
+========================================= */
 
+.contact-page {
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    min-height: 85vh;
+
+    padding:
+        170px 30px
+        100px;
+}
+
+.contact-page h1 {
+    max-width: 900px;
+
+    margin:
+        25px 0 35px;
+
+    font-size: clamp(
+        5rem,
+        11vw,
+        11rem
+    );
+
+    line-height: 0.83;
+
+    letter-spacing: -0.075em;
+}
+
+.contact-description {
+    max-width: 500px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 70px;
+}
+
+.contact-links {
+    max-width: 700px;
+
+    border-top:
+        1px solid
+        var(--border);
+}
+
+.contact-links a {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding:
+        22px 0;
+
+    border-bottom:
+        1px solid
+        var(--border);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    transition:
+        padding-left 0.25s ease;
+}
+
+.contact-links a:hover {
+    padding-left: 12px;
+}
+
+.contact-links span {
+    color: var(--accent);
+}
+
+
+/* =========================================
+   CONTACT MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .contact-page {
+        padding:
+            130px 20px
+            80px;
+    }
+
+    .contact-page h1 {
+        font-size: 5rem;
+    }
+
+}
