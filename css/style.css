@@ -1713,3 +1713,162 @@ section {
     }
 
 }
+
+/* =========================================
+   EXPERIENCE PAGE
+========================================= */
+
+.experience-page {
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    padding:
+        20px 30px
+        120px;
+}
+
+.experience-list {
+    border-top:
+        1px solid
+        var(--border);
+}
+
+.experience-item {
+    display: grid;
+
+    grid-template-columns:
+        220px
+        1fr;
+
+    gap: 80px;
+
+    padding:
+        60px 0;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+.experience-date {
+    color: var(--muted);
+
+    font-size: 0.7rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    padding-top: 7px;
+}
+
+.experience-main {
+    max-width: 750px;
+}
+
+.experience-type {
+    color: var(--accent);
+
+    font-size: 0.68rem;
+
+    font-weight: 750;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 15px;
+}
+
+.experience-main h2 {
+    font-size: clamp(2.3rem, 4vw, 4rem);
+
+    line-height: 0.98;
+
+    letter-spacing: -0.05em;
+
+    margin-bottom: 25px;
+}
+
+.experience-main > p:not(.experience-type) {
+    max-width: 620px;
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   DARK CTA
+========================================= */
+
+.dark-cta {
+    background: var(--dark);
+
+    color: white;
+
+    padding:
+        130px max(
+            30px,
+            calc((100vw - var(--max-width)) / 2)
+        );
+}
+
+.dark-cta .eyebrow {
+    color: #aaa;
+}
+
+.dark-cta h2 {
+    max-width: 700px;
+
+    margin:
+        20px 0 40px;
+
+    font-size: clamp(3.5rem, 6vw, 6rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.06em;
+}
+
+.dark-cta .text-link {
+    color: white;
+
+    border-bottom:
+        1px solid
+        rgba(255, 255, 255, 0.5);
+
+    padding-bottom: 6px;
+}
+
+
+/* =========================================
+   EXPERIENCE MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .experience-page {
+        padding:
+            20px 20px
+            80px;
+    }
+
+    .experience-item {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 45px 0;
+    }
+
+    .dark-cta {
+        padding:
+            90px 20px;
+    }
+
+}
+
+
