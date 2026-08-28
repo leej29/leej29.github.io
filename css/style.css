@@ -2730,3 +2730,191 @@ section {
     }
 
 }
+
+/* =========================================
+   V3 HERO REFINEMENT
+========================================= */
+
+.hero-copy {
+    max-width: 900px;
+}
+
+.hero-category {
+    color: var(--accent);
+
+    font-size: 0.68rem;
+
+    font-weight: 750;
+
+    letter-spacing: 0.12em;
+
+    margin-bottom: 25px;
+}
+
+.hero-copy h1 {
+    margin: 0;
+
+    font-size:
+        clamp(
+            4.5rem,
+            8vw,
+            8.5rem
+        );
+
+    line-height: 0.88;
+
+    letter-spacing: -0.07em;
+}
+
+.hero-copy h1 span {
+    color: var(--accent);
+}
+
+.hero-description {
+    max-width: 520px;
+
+    margin-top: 40px;
+
+    color: var(--muted);
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+    width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    max-width: 380px;
+
+    justify-self: end;
+
+    position: relative;
+
+    border:
+        1px solid
+        var(--border);
+
+    overflow: hidden;
+}
+
+.hero-visual-grid {
+    position: absolute;
+
+    inset: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    grid-template-rows:
+        repeat(3, 1fr);
+}
+
+.hero-visual-grid span {
+    border:
+        1px solid
+        var(--border);
+}
+
+.hero-visual-grid span:nth-child(5) {
+    background: var(--dark);
+}
+
+.hero-visual-grid span:nth-child(5)::after {
+    content: "+";
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100%;
+
+    color: white;
+
+    font-size: 2rem;
+
+    font-weight: 300;
+}
+
+.hero-visual-label {
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 15px;
+
+    color: var(--muted);
+
+    font-size: 0.58rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+}
+
+
+/* =========================================
+   UPDATED HERO LAYOUT
+========================================= */
+
+.home-hero-main {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(280px, 0.55fr);
+
+    gap: 70px;
+
+    align-items: center;
+
+    margin:
+        80px 0
+        65px;
+}
+
+
+/* =========================================
+   HERO MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .home-hero-main {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+
+        margin:
+            90px 0
+            60px;
+    }
+
+    .hero-visual {
+        justify-self: start;
+
+        max-width: 320px;
+    }
+
+    .hero-copy h1 {
+        font-size:
+            clamp(
+                4rem,
+                13vw,
+                7rem
+            );
+    }
+
+}
+
